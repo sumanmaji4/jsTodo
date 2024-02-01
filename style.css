@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3rem;
+}
+
+/* input style */
+
+.input-box {
+  width: 100%;
+  border: 1px solid #9ec98d;
+  display: flex;
+  gap: 0;
+  border-radius: 20px;
+  overflow: hidden;
+  background-color: #e6ffdc;
+}
+input:focus {
+  outline: none;
+}
+.input-box input {
+  flex: 1;
+  background: none;
+  padding-inline: 12px;
+  font-size: 1.2rem;
+  border: none;
+}
+.input-box button {
+  font-size: 20px;
+  cursor: pointer;
+  padding: 5px;
+  padding-inline: 8px;
+  background-color: #9ec98d;
+  border: none;
+}
+.btns {
+  display: flex;
+}
+.btns button:hover {
+  background-color: #abd799ac;
+}
+
+.addBtn,
+.saveBtn {
+  padding-left: 15px !important;
+  border-radius: 20px 0 0 20px;
+}
+.saveBtn {
+  display: none;
+}
+
+/* List style */
+.allTasks {
+  margin-top: 30px;
+  width: 100%;
+}
+.unitTask {
+  list-style-type: none;
+  border: 1px solid #9ec98d;
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 10px;
+  display: flex;
+}
+
+.unitTask h3 {
+  flex: 1;
+}
+.checked {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+.actionBtns p {
+  background-color: #e6ffdc;
+  padding: 5px;
+  border: 1px solid #9ec98d;
+  border-radius: 5px;
+  margin: 5px;
+  cursor: pointer;
+}
+.actionBtns p:hover {
+  scale: 1.2;
+}
